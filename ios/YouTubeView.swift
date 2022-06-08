@@ -28,7 +28,7 @@ import YoutubePlayerView
         "rel": "0",
         "modestbranding": "1",
         "iv_load_policy" : "3",
-        "fs": "0",
+        "fs": "1",
         "ecver" : "2",
         "playsinline" : "1",
         "origin": "https://youtube.com",
@@ -51,7 +51,7 @@ import YoutubePlayerView
     @objc var showFullScreenButton: Bool = false {
         didSet{
             playerVars["fs"] = (showFullScreenButton) ? "1" : "0";
-            playerVars["showinfo"] = (showFullScreenButton) ? "" : "0";
+            playerVars["showinfo"] = (showFullScreenButton) ? "1" : "0";
         }
     }
     
